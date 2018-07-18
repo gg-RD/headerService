@@ -1,9 +1,14 @@
 const webpack = require('webpack');
 const path = require('path');
 
+// look into absolute paths
 module.exports = {
   context: __dirname + '/client',
-  entry: './index.js',
+  entry: './header.jsx',
+  output: {
+    filename: 'bundle.js',
+    path: __dirname + '/public',
+  },
   module: {
     loaders: [
       {
@@ -15,9 +20,5 @@ module.exports = {
         },
       },
     ],
-  },
-  output: {
-    path: __dirname + '/public',
-    filename: 'app.js',
   }
 };
