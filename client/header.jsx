@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TopBar from './components/topBar.jsx';
+import MiddleBar from './components/middleBar.jsx';
 
 class Header extends React.Component {
   constructor(props) {
@@ -9,7 +10,8 @@ class Header extends React.Component {
   render () {
     return (
       <div>
-        <TopBar />
+        <TopBar bar = 'topBarWidget'/>
+        <MiddleBar bar = 'middleBarWidget'/>
       </div>
     );
   }
@@ -17,3 +19,5 @@ class Header extends React.Component {
 
 window.Header = Header;
 // console.log(TopBarWidget);
+
+// <MiddleBar />

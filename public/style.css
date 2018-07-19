@@ -1,0 +1,82 @@
+/*div {
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+}*/
+
+/*padding right and left are 28*/
+/*padding top and bottum are 8*/
+body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#topBar {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid lightgrey;
+  height: 40px;
+}
+#middleBar {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.topBarWidget {
+  border-right: 1px solid #e5e5e5;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.middleBarWidget {
+  /*border-right: 1px solid #e5e5e5;*/
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.headerTopBarImage {
+  height: 15px;
+  padding-left: 28px;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  padding-right: 28px;
+
+}
+
+#middleWidget {
+  height: 40px;
+  width: 50%;
+}
+
+.rightWidgets {
+  border-left: 1px solid #e5e5e5;
+  border-right: none;
+  margin-right: 0px;
+  margin-left: auto;
+}
+.search {
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid lightgrey;
+  width: 200px;
+}
+.search img {
+  height: 100%;
+}
+
+.inputField {
+  margin-left: 5px;
+  margin-top: 2px;
+  height: 90%;
+  width: 150px;
+  position: relative;
+  top: -40%;
+  border: none;
+  z-index: -1;
+}
+.nike img {
+  height: 55%;
+}
