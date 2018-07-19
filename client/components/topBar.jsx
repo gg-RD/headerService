@@ -8,7 +8,7 @@ class TopBar extends React.Component {
       'imgs': ['./pictures/converseDeselect.png','./pictures/converseSelect.png', './pictures/hurleyDeselect.png', './pictures/hurleySelect.png', './pictures/jordanDeselect.png', './pictures/jordanSelect.png', './pictures/nikePlusDeselect.png','./pictures/nikePlusSelect.png', './pictures/joinDeselect.png', './pictures/joinSelect.png', './pictures/helpDeselect.png', './pictures/helpSelect.png', './pictures/cartDeselect.png', './pictures/cartSelect.png', './pictures/language.png'],
       'selected': null
     };
-  }
+  } //
   hover(componentNumber) { // 0, 1, 2, 3
     this.setState({
       imgs: this.state.imgs,
