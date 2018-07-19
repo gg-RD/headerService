@@ -20,7 +20,7 @@ class SearchWidget extends React.Component {
       searchTerm: 'search'
     }
   }
-  onChange(e) {
+  onChange(e) { //
     this.setState({
       'searchTerm': e.target.value
     })
