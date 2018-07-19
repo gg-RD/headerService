@@ -17,7 +17,7 @@ class SearchWidget extends React.Component {
     this.toggled = false;
     this.componentNumber = props.componentNumber;
     this.state = {
-      searchTerm: 'search'
+      searchTerm: 'Search'
     }
   }
   onChange(e) { //
@@ -26,12 +26,22 @@ class SearchWidget extends React.Component {
     })
   }
   render() { 
-    return (
+    // if (this.state.searchTerm !== 'Search' && this.state.searchTerm !== '') {
+    //   //implement rendering that darkens the lower segments of the page
+    // } else {
+      return (
       <div  className = {this.classes}>
-          <img src= {this.props.img} classNme = 'sImage'/>
-          <input type= 'text' className ='inputField' value = {this.state.searchTerm}></input>
+          <img src= {this.props.img} className = 'sImage' onClick = {()=> {
+            this.setState({
+              'searchTerm': ''
+            });
+            alert('sorry, we cant search yet.');
+          }}/>
+          <input type='text' className ='inputField' value = {this.state.searchTerm} onChange = {this.onChange.bind(this)} onClick = {()=>{this.setState({'searchTerm': ''})}}/>
       </div>
-    ); 
+    );
+//    }
+     
   }
 }
 

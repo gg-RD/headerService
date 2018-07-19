@@ -33,7 +33,7 @@ body {
 .middleBarWidget {
   /*border-right: 1px solid #e5e5e5;*/
   margin-right: 0px;
-  margin-left: 0px;
+
 }
 
 .headerTopBarImage {
@@ -56,13 +56,15 @@ body {
   margin-right: 0px;
   margin-left: auto;
 }
-/*asdofh*/
+
 .search { 
+  display: inline-block;
   height: 40px;
   margin-top: 15px;
   margin-bottom: 15px;
   border: 1px solid lightgrey;
   width: 200px;
+  margin-right: 20px;
 }
 .search img {
   height: 100%;
@@ -72,11 +74,17 @@ body {
   margin-left: 5px;
   margin-top: 2px;
   height: 90%;
-  width: 150px;
+  width: 153px;
   position: relative;
   top: -40%;
   border: none;
-  z-index: -1;
+  font-size: 18px;
+  font-family: 'Helvetica';
+  font-weight: lighter;
+  color: grey;
+}
+input:focus {
+  outline: none;
 }
 .nike img {
   height: 55%;
