@@ -1,18 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import TopBar from './components/topBar.jsx';
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      selectedElement: null
-    }
   }
   render () {
-    return (<p> this should render once stuff is configured correctly </p>);
+    return (
+      <div>
+        <TopBar />
+      </div>
+    );
   }
 }
 
 window.Header = Header;
-console.log(module.exports);
+// console.log(TopBarWidget);
