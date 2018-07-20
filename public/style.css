@@ -64,7 +64,7 @@ body {
   margin-bottom: 15px;
   border: 1px solid lightgrey;
   width: 200px;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 .search img {
   height: 100%;
@@ -78,10 +78,9 @@ body {
   position: relative;
   top: -40%;
   border: none;
-  font-size: 18px;
-  font-family: 'Helvetica';
-  font-weight: lighter;
-  color: grey;
+  font-size: 14px;
+  font-family: 'Calibri';
+  color: lightgrey;
 }
 input:focus {
   outline: none;

@@ -28,7 +28,7 @@ class MiddleBar extends React.Component {
         <BarWidget  nike = 'nike' bar = {this.props.bar} widgetAlignment = 'leftWidgets' img={this.state.imgs[0]} dehover = {this.dehover.bind(this)} hover = {this.hover.bind(this)} componentNumber = {0}/>
         <BarWidget  bar = {this.props.bar} widgetAlignment = 'middleWidgets' img={this.state.imgs[1]} dehover = {this.dehover.bind(this)} hover = {this.hover.bind(this)} componentNumber = {0}/>
 
-          <SearchWidget bar = {this.props.bar} widgetAlignment = 'rightWidgets' img= {this.state.imgs[6]}/>
+        <SearchWidget bar = {this.props.bar} widgetAlignment = 'rightWidgets' img= {this.state.imgs[6]}/>
 
       </div>
     )
