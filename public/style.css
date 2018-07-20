@@ -25,15 +25,35 @@ body {
   border-bottom: 1px solid lightgrey;
 }
 
+.middleWidgets {
+  margin-left: 20px;
+  margin-right: 20px; 
+}
+
 .topBarWidget {
   border-right: 1px solid #e5e5e5;
   margin-right: 0px;
   margin-left: 0px;
 }
-.middleBarWidget {
-  /*border-right: 1px solid #e5e5e5;*/
-  margin-right: 0px;
+#leftMiddleSpacingBar {
+  width: 25%;
+}
+#rightMiddleSpacingBar {
+  width: 25%;
+}
 
+.parent {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.WidgetText {
+  height: 50%;
+  align-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Helvetica';
+  font-style: normal;
 }
 
 .headerTopBarImage {
@@ -79,7 +99,7 @@ body {
   top: -40%;
   border: none;
   font-size: 14px;
-  font-family: 'Calibri';
+  font-family: 'Helvetica';
   color: lightgrey;
 }
 input:focus {

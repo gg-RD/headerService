@@ -36,7 +36,7 @@ class TopBar extends React.Component {
     }
 
     console.log(el);
-    el.style.borderBottom = "4px solid black";
+    el.style.borderBottom = "2px solid black";
     this.setState({
       'imgs': this.state.imgs,
       'selected': componentNumber*2+1
