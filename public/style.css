@@ -12,22 +12,22 @@ body {
   margin-left: 0px;
   margin-right: 0px;
 }
+
+/* Nav Bar specific styles (includes top and middle bar) */
+#navBar{
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+
+
+/*Top Bar Specific Styles */
 #topBar {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid lightgrey;
   height: 40px;
-}
-#middleBar {
-  display: flex;
-  flex-direction: row;
-  height: 70px;
-  border-bottom: 1px solid lightgrey;
-}
-
-.middleWidgets {
-  margin-left: 20px;
-  margin-right: 20px; 
+  background-color: white;
 }
 
 .topBarWidget {
@@ -35,11 +35,144 @@ body {
   margin-right: 0px;
   margin-left: 0px;
 }
+
+.headerTopBarImage {
+  height: 15px;
+  padding-left: 28px;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  padding-right: 28px;
+}
+
+/*Middle Bar Specific Styles */
+#middleBar {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+}
+
 #leftMiddleSpacingBar {
   width: 25%;
 }
 #rightMiddleSpacingBar {
   width: 25%;
+}
+
+/* Bottom Bar specific Styles */
+
+#bottomBar {
+  display: flex;
+
+  padding-top: 110px;
+  height: 60px;
+  width: 100%;
+  background-color: #f7f7f7;
+/*  border-top: 1px solid #e5e5e5;*/
+  border-bottom: 1px solid lightgrey;
+  justify-content: center;
+}
+#bottomBarslider {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+}
+#bottomBarsliderMoveLeft {
+  width: 60px;
+}
+#bottomBarsliderMoveLeft img{
+  width: 16px;
+  height: 16px;
+  margin-top: 22px;
+  margin-left: 22px;
+}
+#bottomBarSliderMainContent {
+  width: 84%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.transitionSlider {
+  
+}
+
+
+#bottomBarsliderMoveRight {
+  width: 60px;
+}
+#bottomBarsliderMoveRight img{
+  width: 16px;
+  height: 16px;
+  margin-top: 22px;
+  margin-left: 22px;
+}
+#bottomBarsliderMainContentIconHolder{
+  width: 60px;
+
+  display: flex;
+}
+#returnsIcon {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 60%;
+  width: 65%;
+}
+#nikePlusIcon {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 40%;
+  width: 70%;
+}
+
+#bottomBarSliderMainContentTextHolder {
+  
+  display: flex;
+  margin-right: 10px;
+}
+#bottomBarsliderMainContentText {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Helvetica';
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  color: #222222;
+}
+
+#bottomBarSliderMainContentSubtitleHolder {
+  display:flex;
+  margin-right: 5px;
+}
+#bottomBarsliderMainContentSubtitle {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Helvetica';
+  font-size: 11px;
+  font-weight: lighter;
+  color: #323232;
+}
+#bottomBarSliderMainContentMoreHolder {
+  display: flex;
+  margin-right: 5px;
+}
+#bottomBarsliderMainContentMore {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Helvetica';
+  font-size: 11px;
+  font-weight: lighter;
+  text-decoration: underline;
+  color: black;
+}
+
+/* Main page (ie page content) */
+#mainPage {
+  background-color: white;
+  height: 1000px;
 }
 
 .parent {
@@ -50,19 +183,15 @@ body {
 .WidgetText {
   height: 50%;
   align-content: center;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 14px;
   font-family: 'Helvetica';
   font-style: normal;
 }
 
-.headerTopBarImage {
-  height: 15px;
-  padding-left: 28px;
-  padding-top: 12px;
-  padding-bottom: 8px;
-  padding-right: 28px;
-
+.middleWidgets {
+  margin-left: 20px;
+  margin-right: 20px; 
 }
 
 #middleWidget {
