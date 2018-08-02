@@ -30,9 +30,53 @@ class BarWidget extends React.Component {
     this.componentNumber = props.componentNumber;
   }
   render() { 
+    console.log(this.classes)
+
+    let headerTopBarImageStyle = {
+      'height': '15px',
+      'paddingLeft': '28px',
+      'paddingTop': '12px',
+      'paddingBottom': '8px',
+      'paddingRight': '28px'
+    };
+    if (this.classes.indexOf('nike') !== -1) {
+      headerTopBarImageStyle = {
+      'height': '55%',
+      'paddingLeft': '28px',
+      'paddingTop': '12px',
+      'paddingBottom': '8px',
+      'paddingRight': '28px'
+      }
+    }
+    let helpStyle= {};
+    if (this.classes.indexOf('help') !== -1) {
+      helpStyle = {
+      'height': '100%',
+      'border-left': '1px solid lightgrey'
+      }
+    }
     if (this.props.specialhover !== undefined) {
+      console.log(this.classes, 'line 41');
+      let divStyle = {};
+      if (this.classes === 'topBarWidget leftWidgets') {
+        console.log('one ran');
+        divStyle = {
+          'borderRight': '1px solid #e5e5e5',
+          'marginRight': '0px',
+          'marginLeft': '0px'
+        }
+      } else if (this.classes === 'topBarWidget rightWidgets') {
+        console.log('two ran');
+
+        divStyle = {
+          borderLeft: '1px solid #e5e5e5',
+          borderRight: 'none',
+          marginRight: '0px',
+          marginLeft: 'auto'
+        }
+      }
       return (
-        <div  className = {this.classes} onClick = {()=> {
+        <div style = {helpStyle} className = {this.classes} onClick = {()=> {
           alert('Sorry, we have not built out that page yet');
         }} onMouseEnter = {(e) =>{
           console.log(this.props.componentNumber);
@@ -45,21 +89,40 @@ class BarWidget extends React.Component {
           // this.specialdehover();
           // this.dehover();
         }}>
-          <img src={this.props.img} className = 'headerTopBarImage'/>
+          <img style = {headerTopBarImageStyle} src={this.props.img}  className = 'headerTopBarImage'/>
         </div>
       );
     }
 
 
      else {
+      console.log(this.classes, 'line 41');
+      let divStyle = {};
+      if (this.classes === 'topBarWidget leftWidgets') {
+        console.log('one ran');
+        divStyle = {
+          'borderRight': '1px solid #e5e5e5',
+          'marginRight': '0px',
+          'marginLeft': '0px'
+        }
+      } else if (this.classes === 'topBarWidget rightWidgets') {
+        console.log('two ran');
+
+        divStyle = {
+          borderLeft: '1px solid #e5e5e5',
+          borderRight: 'none',
+          marginRight: '0px',
+          marginLeft: 'auto'
+        }
+      }
       return (
-      <div  className = {this.classes} onClick = {()=> {
+      <div  className = {this.classes} style = {divStyle} onClick = {()=> {
         alert('Sorry, we have not built out that page yet');
       }} onMouseEnter = {() =>{
         this.hover(this.componentNumber);
         return;
       }} onMouseLeave = {this.dehover}>
-        <img src={this.props.img} className = 'headerTopBarImage'/>
+        <img style = {headerTopBarImageStyle} src={this.props.img} className = 'headerTopBarImage'/>
       </div>
     );
     } 
