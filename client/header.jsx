@@ -9,14 +9,18 @@ class Header extends React.Component {
     super(props);
   }
   render () {
+    let navBarStyle = {
+      width: '100%',
+      position: 'fixed',
+      top: '0px'
+    }
     return (
       <div>
-        <div id= 'navBar'>
+        <div id= 'navBar' style = {navBarStyle}>
           <TopBar bar = 'topBarWidget'/>
           <MiddleBar bar = 'middleBarWidget'/>
         </div>
         <BottomBar bar = 'bottomBarWidget'/>
-        <div id = 'mainPage'></div>
       </div>
     );
   }
