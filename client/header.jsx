@@ -27,6 +27,3 @@ class Header extends React.Component {
 }
 
 window.Header = Header;
-// console.log(TopBarWidget);
-
-// <MiddleBar />
